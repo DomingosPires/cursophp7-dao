@@ -14,10 +14,10 @@ echo json_encode($usuarios);*/
 /* //////////////////////////// */
 
 /*$root = new Usuario();
-$root->loadById(4);
+$root->loadById(1);
 
 echo '<pre>';
-echo $root;
+echo $root;*/
 
 /* //////////////////////////// */
 /*     MOSTRA TODOS OS USERS    */
@@ -63,11 +63,24 @@ echo $aluno;*/
 /*    UPDATE USER VIA STORE PROCEDORS   */
 /* //////////////////////////////////// */
 
+/*$usuario = new Usuario();
+
+$usuario->loadById(1);
+
+$usuario->update("professor","professor1");
+
+echo '<pre>';
+echo $usuario;*/
+
+/* //////////////////////////////////// */
+/*    DELETE USER VIA STORE PROCEDORS   */
+/* //////////////////////////////////// */
+
 $usuario = new Usuario();
 
 $usuario->loadById(8);
 
-$usuario->update("professor","professor1");
+$usuario->delete();
 
 echo '<pre>';
 echo $usuario;
