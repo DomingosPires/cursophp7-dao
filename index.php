@@ -41,13 +41,35 @@ echo json_encode($search);*/
 /*     MOSTRA USERS USANDO LOGIN E SENHA    */
 /* //////////////////////////////////////// */
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 
 $usuario->userLogin("Domingos","1234567890");
 
 echo '<pre>';
-echo json_encode($usuario);
+echo json_encode($usuario);*/
 
+/* //////////////////////////////////// */
+/*    INSERE USER VIA STORE PROCEDORS   */
+/* //////////////////////////////////// */
 
+/*$aluno = new Usuario("aluno3","aluno3");
+
+$aluno->insert();
+
+echo '<pre>';
+echo $aluno;*/
+
+/* //////////////////////////////////// */
+/*    UPDATE USER VIA STORE PROCEDORS   */
+/* //////////////////////////////////// */
+
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor","professor1");
+
+echo '<pre>';
+echo $usuario;
 
 ?>
